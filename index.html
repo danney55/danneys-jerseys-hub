@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Danney's Jerseys Hub — your favorite team's jersey, our priority. Nationwide delivery in Ghana.">
+  <title>Danney's Jerseys Hub | Football Jerseys in Ghana</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Danney's Jerseys Hub home">
+      <span class="brand-mark">DJH</span>
+      <span><b>DANNEY'S</b><small>JERSEYS HUB</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a>
+      <a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="accountBtn" title="Account">♙</button>
+      <button class="icon-btn cart-btn" id="cartBtn" title="Cart">🛒<span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a>
+    <a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">DANNEY'S JERSEYS HUB</p>
+        <h1>Your favorite team's jersey, <span>our priority.</span></h1>
+        <p class="hero-text">Player-version jerseys and Lacoste styles for football fans across Ghana.</p>
+        <div class="hero-buttons">
+          <a class="btn gold" href="#shop">Shop now →</a>
+          <a class="btn outline" href="#contact">Contact us</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ All teams</span><span>✓ Nationwide delivery</span><span>✓ Mobile Money</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Football jersey display">
+        <div class="floating-tag">ALL TEAMS<br><b>ALL STYLES</b></div>
+        <div class="jersey j1">REAL<br><small>MADRID</small></div>
+        <div class="jersey j2">BARÇA</div>
+        <div class="jersey j3">GHANA</div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <button data-filter="All">⚽ <span>All Teams</span></button>
+      <button data-filter="Club">🏆 <span>Club Jerseys</span></button>
+      <button data-filter="National">🌍 <span>National Teams</span></button>
+      <button data-filter="Player">🔟 <span>Player Jerseys</span></button>
+      <button data-filter="Lacoste">👕 <span>Lacoste</span></button>
+      <button data-filter="Kids">🧒 <span>Kids</span></button>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR COLLECTION</p><h2>Featured Jerseys</h2><p>Sample products are included now. Replace them with your own photos and exact stock anytime.</p></div>
+        <div class="shop-tools">
+          <input id="searchInput" type="search" placeholder="Search team or player…" aria-label="Search jerseys">
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option><option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option><option value="name">Name A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-pills" id="filterPills"></div>
+      <div class="products" id="products"></div>
+      <div class="empty-state" id="emptyState" hidden>No jerseys match your search.</div>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">SPECIAL OFFER</p><h2>All teams. All styles. One hub.</h2><p>Player Version — GH₵120 &nbsp; | &nbsp; Lacoste — GH₵160</p></div>
+      <a class="btn gold" href="#shop">Explore jerseys</a>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT US</p><h2>Built for football fans.</h2>
+        <p>Danney's Jerseys Hub is based at Dubai Kejetia / Effiduase and serves customers across Ghana. We focus on giving fans access to the jerseys they love at clear, affordable prices.</p>
+        <div class="feature-grid">
+          <div><b>100%</b><span>Jersey-focused store</span></div>
+          <div><b>GH₵120</b><span>Player Version</span></div>
+          <div><b>GH₵160</b><span>Lacoste</span></div>
+          <div><b>GHANA</b><span>Nationwide delivery</span></div>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Delivery & payment</h3>
+        <p><b>Effiduase:</b> Free delivery</p><p><b>Kumasi:</b> Free delivery</p>
+        <p><b>Other locations:</b> Delivery fee depends on location</p>
+        <p><b>Payment:</b> Mobile Money</p>
+        <p class="note">At checkout, customers can review their order and payment instructions. Actual mobile-money processing can be connected later.</p>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-heading simple"><div><p class="eyebrow">CUSTOMER REVIEWS</p><h2>What customers say</h2></div>
+        <button class="btn dark" id="addReviewBtn">+ Add review</button></div>
+      <div class="review-grid" id="reviewGrid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">GET IN TOUCH</p><h2>Ready for your next jersey?</h2>
+      <p>Dubai Kejetia / Effiduase · Nationwide delivery</p></div>
+      <div class="contact-card"><p><b>Phone:</b> <a href="tel:+233542363398">0542363398</a></p>
+      <p><b>Email:</b> <a href="mailto:danielamankwaah553@icloud.com">danielamankwaah553@icloud.com</a></p>
+      <p><b>Payment:</b> Mobile Money</p></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">DANNEY'S JERSEYS HUB</div><p>© <span id="year"></span> Danney's Jerseys Hub. Your favorite team's jersey, our priority.</p></footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your cart</h2><button class="close" data-close>×</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-summary"><div><span>Subtotal</span><b id="cartTotal">GH₵0</b></div>
+      <button class="btn gold full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Checkout modal -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-box">
+      <button class="close" data-close>×</button><p class="eyebrow">CHECKOUT</p><h2>Complete your order</h2>
+      <form id="checkoutForm">
+        <label>Full name<input required name="name" autocomplete="name"></label>
+        <label>Phone number<input required name="phone" inputmode="tel" placeholder="e.g. 0241234567"></label>
+        <label>Delivery location<input required name="location" placeholder="Town / area"></label>
+        <label>Delivery address<textarea required name="address" rows="3"></textarea></label>
+        <label>Payment method<select name="payment"><option>Mobile Money</option></select></label>
+        <div class="checkout-note"><b>Payment:</b> Mobile Money to <strong>0542363398</strong>. Please confirm the payment details with Danney's Jerseys Hub before sending money.</div>
+        <button class="btn gold full" type="submit">Place order</button>
+      </form>
+      <div id="orderSuccess" class="success" hidden></div>
+    </div>
+  </div>
+
+  <!-- Account modal -->
+  <div class="modal" id="accountModal">
+    <div class="modal-box small">
+      <button class="close" data-close>×</button><p class="eyebrow">MY ACCOUNT</p><h2>Customer account</h2>
+      <p class="muted">This free starter site stores account details only in the customer's browser. For real secure accounts across devices, connect a backend such as Supabase later.</p>
+      <form id="accountForm"><label>Name<input required name="name"></label><label>Email<input required type="email" name="email"></label><button class="btn gold full">Save account</button></form>
+      <div id="accountSaved" class="success" hidden></div>
+    </div>
+  </div>
+
+  <!-- Review modal -->
+  <div class="modal" id="reviewModal">
+    <div class="modal-box small"><button class="close" data-close>×</button><p class="eyebrow">YOUR EXPERIENCE</p><h2>Leave a review</h2>
+      <form id="reviewForm"><label>Name<input required name="name"></label><label>Rating<select name="rating"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label><label>Review<textarea required name="text" rows="4"></textarea></label><button class="btn gold full">Add review</button></form>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
